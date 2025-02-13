@@ -1,0 +1,385 @@
+/* Estilos gerais */
+body {
+    font-family: 'Arial', sans-serif;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    background: url('file:///C:/streaming/streaming/streaming/imagens/netflix-.jpg') no-repeat center center/cover;
+    color: white;
+    position: center;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+
+
+body::-webkit-scrollbar { display: none; }
+
+/* Overlay para melhorar a legibilidade */
+body::before {
+    content: "";
+    position: center;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.6);
+    z-index: -1;
+}
+
+/* Cabeçalho */
+header {
+    background: rgba(200, 0, 0, 0.9); /* Vermelho escuro */
+    color: white;
+    padding: 30px 20px;
+    font-size: 1.5em;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2.5rem;
+}
+
+header p {
+    margin: 10px 0 0;
+    font-size: 1.1rem;
+}
+.fundo-escuroo {
+    background: #000000; /* Cor de fundo escuro */
+    opacity: 0.8;
+    padding: 43px 0; /* Adiciona um pouco de espaçamento interno */
+    width: 100%;
+}
+/* Estilos para a logo */
+.logo-intro {
+    position: absolute;
+    top: -35px; /* Distância do topo */
+    left: 20px; /* Distância da esquerda */
+    width: 150px; /* Largura da logo */
+    height: auto; /* Mantém a proporção */
+    z-index: 2; /* Garante que a logo fique acima de outros elementos */
+}
+
+/* Linha de separação */
+.linha-separacao {
+    position: absolute;
+    top: 85px; /* Posiciona a linha abaixo da logo (ajuste conforme a altura da logo) */
+    left: 0; /* Começa da borda esquerda da tela */
+    width: 100%; /* Ocupa 100% da largura da tela */
+    height: 2px; /* Espessura da linha */
+    background: linear-gradient(100deg, rgba(255, 165, 0, 0), rgb(255, 0, 0), rgba(255, 165, 0, 0)); /* Gradiente */
+    box-shadow: 0 0 0px rgba(255, 0, 0, 0.7); /* Efeito neon */
+    z-index: 2; /* Garante que a linha fique acima do fundo, mas abaixo da logo */
+}
+
+/* Estilos da Introdução */
+
+
+/* Overlay para melhorar a legibilidade */
+body::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.6);
+    z-index: -1; /* Garante que o overlay fique atrás da introdução */
+}
+
+.introducao .container {
+    max-width: 600px; /* Largura máxima do conteúdo */
+    margin-left: 20px; /* Margem à esquerda para alinhar com a logo */
+}
+
+.introducao h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+.introducao p {
+    font-size: 1.2rem;
+    line-height: 1.6;
+    margin: 20px 0;
+}
+
+.introducao strong {
+    color: #ffcc00; /* Amarelo neon */
+    text-shadow: 0 0 5px #ffcc00;
+}
+/* Estilos da Introdução */
+.introducao {
+    color: white;
+    padding: 80px 20px;
+    text-align: left; /* Alinhar o texto à esquerda */
+    margin: 0;
+    box-shadow: none;
+    display: flex;
+    align-items: flex-start; /* Alinhar o conteúdo ao topo */
+    justify-content: flex-start; /* Alinhar à esquerda */
+    min-height: 400px; /* Altura mínima para a seção */
+    width: 50%; /* Define a largura da seção para ocupar metade da tela */
+    margin-left: 5%; /* Adiciona uma margem à esquerda para afastar da borda */
+}
+
+.introducao .container {
+    max-width: 600px; /* Largura máxima do conteúdo */
+    margin-left: 0; /* Remove a margem à esquerda do container */
+}
+
+.introducao h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+.introducao p {
+    font-size: 1.2rem;
+    line-height: 1.6;
+    margin: 20px 0;
+}
+
+.introducao strong {
+    color: #ffcc00; /* Amarelo neon */
+    text-shadow: 0 0 5px #ffcc00;
+}
+/* Botão "Quero Assinar" */
+/* Estilos para o contêiner do texto e botão */
+.texto-e-botao {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+/* Estilos para o botão "Quero Assinar" */
+.assinar-intro {
+    background: #ff4500;
+    color: white;
+    border: none;
+    padding: 15px 30px;
+    font-size: 1.2rem;
+    cursor: pointer;
+    border-radius: 8px;
+    transition: background 0.3s ease, transform 0.2s ease;
+    margin-top: 10px;
+}
+
+.assinar-intro:hover {
+    background: #ff0000;
+    transform: scale(1.05);
+}
+/* Estilo da linha divisória neon */
+
+/* Fundo escuro para as seções a partir de "Filmes e Séries em Destaque" */
+
+.linha-neon {
+    border: none; /* Remove a borda padrão do <hr> */
+    height: 2px; /* Espessura da linha */
+    background: linear-gradient(90deg, rgba(255, 165, 0, 0), rgb(255, 0, 0), rgba(255, 165, 0, 0)); /* Gradiente laranja */
+    box-shadow: 0 0 20px rgb(255, 0, 0); /* Efeito neon */
+    margin: 0px auto; /* Espaçamento acima e abaixo da linha */
+    width: 100%; /* Largura da linha */
+    max-width: 2200px; /* Largura máxima */
+
+}
+
+.streaming {
+    display: flex; /* Ativa o Flexbox */
+    flex-wrap: wrap; /* Permite que as imagens quebrem para a próxima linha se necessário */
+    justify-content: center; /* Centraliza as imagens horizontalmente */
+    gap: 20px; /* Espaçamento entre as imagens */
+    padding: 20px; /* Espaçamento interno */
+}
+
+.streaming img {
+    max-width: 200px; /* Define um tamanho máximo para as imagens */
+    height: auto; /* Mantém a proporção da imagem */
+    border-radius: 10px; /* Bordas arredondadas */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3); /* Sombra para um efeito moderno */
+    transition: transform 0.3s ease; /* Efeito de zoom ao passar o mouse */
+}
+
+.streaming img:hover {
+    transform: scale(1.1); /* Aumenta a imagem ao passar o mouse */
+}
+
+
+/* Ajustes para o carrossel dentro do fundo escuro */
+.carrossel {
+    padding: 50px 20px;
+    color: white;
+    text-align: center;
+}
+
+.fundo-escuro {
+    background: #000000; /* Cor de fundo escuro */
+    padding: 20px none; /* Adiciona um pouco de espaçamento interno */
+    width: 100%;
+}
+/* Ajustes para os planos dentro do fundo escuro */
+.planos {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin: 50px auto;
+    flex-wrap: wrap;
+    padding: 20px;
+}
+
+/* Ajustes para o rodapé dentro do fundo escuro */
+footer {
+    background: rgba(200, 0, 0, 0.9);
+    color: white;
+    padding: 15px;
+    width: 100%;
+    margin-top: auto;
+    font-size: 0.9em;
+}
+
+/* Container dos planos */
+.planos {
+    display: flex;
+    justify-content: center;
+    gap: 20px; /* Reduzi o espaçamento entre os planos */
+    margin: 50px auto;
+    flex-wrap: nowrap; /* Impede que os planos quebrem para a próxima linha */
+    padding: 20px;
+}
+
+/* Estilos dos cartões dos planos */
+.plano {
+    background: rgba(68, 68, 68, 0.1);
+    color: white;
+    padding: 20px; /* Reduzi o padding para deixar mais estreito */
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(200, 0, 0, 0.4);
+    width: 250px; /* Largura reduzida para deixar mais estreito */
+    min-height: 400px; /* Altura reduzida */
+    transition: transform 0.3s ease, box-shadow 0.3s ease, background 0.3s ease;
+    cursor: pointer;
+    position: relative;
+    backdrop-filter: blur(10px);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; /* Distribui o conteúdo verticalmente */
+    border: 2px solid #ff4500; /* Contorno laranja */
+    flex-shrink: 0; /* Impede que os planos encolham */
+}
+
+.plano:hover {
+    transform: scale(1.05); /* Efeito de zoom ao passar o mouse */
+    box-shadow: 0 8px 20px rgba(200, 0, 0, 0.6);
+    background: rgba(200, 0, 0, 0.2); /* Fundo levemente mais vermelho ao passar o mouse */
+    border-color: #ffcc00; /* Muda a cor do contorno ao passar o mouse */
+}
+
+/* Destaque para o plano Premium */
+.plano.destaque {
+    background: rgba(100, 100, 100, 0.9);
+    transform: scale(1.05);
+    box-shadow: 0 8px 20px rgba(200, 0, 0, 0.6);
+    border: 2px solid #ffcc00; /* Contorno amarelo para o plano destacado */
+}
+
+.plano.destaque:hover {
+    background: rgba(100, 100, 100, 0.9); /* Fundo mais intenso ao passar o mouse */
+    transform: scale(1.1); /* Efeito de zoom maior para o plano destacado */
+    border-color: #ff4500; /* Muda a cor do contorno ao passar o mouse */
+}
+
+/* Destaque para o plano Básico */
+.plano.basico {
+    background: rgba(100, 100, 100, 0.9);
+    transform: scale(1.05);
+    box-shadow: 0 8px 20px rgba(200, 0, 0, 0.6);
+    border: 2px solid #ffcc00; /* Contorno amarelo para o plano básico */
+}
+
+.plano.basico:hover {
+    background: rgba(100, 100, 100, 0.9); /* Fundo mais intenso ao passar o mouse */
+    transform: scale(1.1); /* Efeito de zoom maior para o plano destacado */
+    border-color: #ff4500; /* Muda a cor do contorno ao passar o mouse */
+}
+
+/* Preço */
+.preco {
+    font-size: 1.5em; /* Reduzi o tamanho da fonte do preço */
+    font-weight: bold;
+    margin: 15px 0;
+    color: #ffffff;
+    transition: color 0.3s ease;
+}
+
+.plano:hover .preco {
+    color: #ffcc00; /* Muda a cor do preço ao passar o mouse */
+}
+
+/* Botão Assinar */
+.assinar {
+    background: #b30000;
+    color: white;
+    border: none;
+    padding: 15px; /* Reduzi o padding do botão */
+    width: 100%;
+    font-size: 1em; /* Reduzi o tamanho da fonte do botão */
+    cursor: pointer;
+    border-radius: 8px;
+    transition: background 0.3s ease, transform 0.2s ease;
+}
+
+.assinar:hover {
+    background: #800000;
+    transform: scale(1.05); /* Efeito de zoom ao passar o mouse */
+}
+/* Rodapé */
+footer {
+    background: rgba(200, 0, 0, 0.9);
+    color: white;
+    padding: 15px;
+    width: 100%;
+    margin-top: auto;
+    font-size: 0.9em;
+}
+
+/* Estilos do Carrossel */
+.carrossel {
+    padding: 50px 20px;
+    background: rgba(0, 0, 0, 0.7); /* Fundo escuro para contraste */
+    color: white;
+    text-align: center;
+}
+
+.carrossel h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+.carrossel-container {
+    margin: 0 auto;
+    max-width: 1200px;
+}
+
+.carrossel-container img {
+    width: 80%; /* Reduz o tamanho das imagens */
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(31, 31, 31, 0.3);
+    transition: transform 0.3s ease;
+    margin: 0 auto; /* Centraliza as imagens */
+}
+
+.carrossel-container img:hover {
+    transform: scale(1.05); /* Efeito de zoom ao passar o mouse */
+}
+
+/* Estilos dos pontos de navegação */
+.slick-dots li button:before {
+    color: #ff6600; /* Cor laranja */
+}
+
+.slick-dots li.slick-active button:before {
+    color: #ff4500; /* Cor laranja mais vibrante */
+}
